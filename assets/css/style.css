@@ -12,6 +12,7 @@
 	scroll-behavior: smooth;
 }
 
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #2f2f2f;
@@ -54,6 +55,34 @@ h6 {
 	--c: #69acc7;
 }
 
+
+.bg-dimgray{
+	background-color: dimgray;
+}
+
+.bg-alice{
+	background-color: aliceblue;
+}
+
+.text-bold{
+	font-weight: 600;
+}
+
+.text-black{
+	color: black;
+}
+.text-orange{
+	color: orange;
+}
+
+.text-blue{
+	color: #69acc7;
+}
+
+
+.text-white{
+	color: white;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/

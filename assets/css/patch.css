@@ -27,7 +27,6 @@
 	z-index: 2;
 	/*必ず必要*/
 	display: flex;
-	width: 80%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;

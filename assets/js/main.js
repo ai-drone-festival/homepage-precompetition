@@ -40,6 +40,7 @@
   /**
    * Navbar links active state on scroll
    */
+
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
@@ -60,6 +61,7 @@
   /**
    * Scrolls to an element with header offset
    */
+
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
@@ -78,6 +80,7 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
+
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {

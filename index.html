@@ -27,9 +27,9 @@
 
 	<!--link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"-->
 
-	<link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-
+	<script src="assets/js/bootstrap.min.js"></script>
+	<link href="assets/css/bootstrap.min.css " rel="stylesheet">
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXR0J72Q9K"></script>
 	<script>
@@ -68,56 +68,66 @@
 <body>
 
 	<!-- ======= Header ======= -->
-	<header id="header" class="header fixed-top bg-dark">
-		<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-			<div class="logo d-flex align-items-center">
-				<a class="navbar-brand" href="#"><img src="assets/img/logo-robocon.png" alt=""></a>
-				<a class="navbar-brand" href="https://lis.inf.kyushu-u.ac.jp/index_japanese.php"><img src="assets/img/lis/wolf.jpg" alt=""></a>
-
+	<header id="header" class="navbar fixed-top navbar-expand-sm bg-dark">
+		<div id="navbar" class="container-fluid">
+			<div class="me-auto navbar-brand container">
+				<div class="row justify-content-start">
+					<a class="col-auto" href="#">
+						<img src="assets/img/logo-robocon.png" alt="" height="40" class="d-inline-block align-text-top"></a>
+					<a class="me-auto col-auto" href="https://lis.inf.kyushu-u.ac.jp/index_japanese.php">
+						<img src="assets/img/lis/wolf.jpg" alt="" height="40" class="d-inline-block align-text-top"></a>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 			</div>
-
-			<nav id="navbar" class="navbar nav-underline navbar-expand-lg">
-					<ul>
-						<li><a id="apply-now-nav-link" class="nav-link scrollto" href="#registration">チーム登録!</a></li>
-						<li><a class="nav-link scrollto active" href="#hero">ホーム</a></li>
-						<li><a class="nav-link scrollto" href="#features">About</a></li>
-						<li><a class="nav-link scrollto" href="#about">大会について</a></li>
-						<li><a class="nav-link scrollto" href="#rule">ルール</a></li>
-						<li><a class="nav-link scrollto" href="#additional">参考資料</a></li>
-						<li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+			<div class="ms-auto text-white">
+				<div class="collapse navbar-collapse justify-content-center">
+					<ul class="navbar-nav mb-2 mb-sm-0">
+						<li  class="nav-item ms-2">
+							<a id="apply-now-nav-link" class="nav-link scrollto" href="#registration">チーム登録!</a></li>
+						<li  class="nav-item ms-2">
+							<a class="nav-link scrollto active" href="#hero">ホーム</a></li>
+						<li class="nav-item ms-2">
+							<a class="nav-link scrollto" href="#features">About</a></li>
+						<li class="nav-item ms-2">
+							<a class="nav-link scrollto" href="#about">大会について</a></li>
+						<li class="nav-item ms-2">
+							<a class="nav-link scrollto" href="#rule">ルール</a></li>
+						<li class="nav-item ms-2">
+							<a class="nav-link scrollto" href="#additional">参考資料</a></li>
+						<li class="nav-item ms-2">
+							<a class="nav-link scrollto" href="#gallery">Gallery</a></li>
 						<!-- <li><a class="nav-link scrollto" href="blog.html">Blog</a></li> -->
-						<li><a class="nav-link scrollto" href="#faq">よくある質問</a></li>
+						<li class="nav-item ms-2">
+							<a class="nav-link scrollto" href="#faq">よくある質問</a></li>
 
-						<li><a class="nav-link scrollto" href="#contact">連絡先</a></li>
+						<li class="nav-item ms-2">
+							<a class="nav-link scrollto" href="#contact">連絡先</a></li>
 
 					</ul>
-				<i class="bi bi-list mobile-nav-toggle"></i>
-			</nav><!-- .navbar -->
-
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</div><!-- .navbar -->
+			</div>
 		</div>
 	</header><!-- End Header -->
 
 	<!-- ======= Hero Section ======= -->
-	<section id="hero" class="full-height d-flex align-items-center px-4 py-4 my-5 text-center">
+	<section id="hero" class="align-items-center px-4 py-4 my-5 text-center">
 		<!-- 
     <div class="hero-banner">
       <h1>Laboratory of Intelligence System's Robocon 2022</h1>
     </div>  -->
 
 		<!-- Background image -->
-		<div class="d-flex flex-row justify-content-center">
-			<div>
-				<h1 id="title" class="display-1 py-5" data-aos="fade-up" data-aos-delay="30">AIドローンフェスタ</br> プレ大会</h1>
-				<div class="flex-box">
-					<p id="sub-title" class="flex-item h1" data-aos="fade-up" data-aos-delay="100">Have fun pushing the <br />boundaries
+		<div class="container-fluid text-center flex-row justify-content-center">
+				<h1 id="title" class="display-1 py-5 col" data-aos="fade-up" data-aos-delay="30">AIドローンフェスタ</br> プレ大会</h1>
+				<div class="row justify-content-center">
+					<p id="sub-title" class="col-md-auto col-6 h1" data-aos="fade-up" data-aos-delay="100">Have fun pushing the <br />boundaries
 						of AI!</p>
-					<div class="col-lg-6 hero-img flex-item" data-aos="zoom-out" data-aos-delay="200">
-						<img src="assets/img/prize_3.png" width="350" height="350" class="img-fluid  mx-auto d-block floating" alt="" data-aos="fade-up"
-							data-aos-delay="100">
-					</div>
+					<img src="assets/img/prize.png"
+						 class="img-fluid  col-6 col-md-2 floating" alt="" data-aos="fade-up">
 				</div>
-			</div>
 		</div>
 		<style>
 			body {
@@ -183,121 +193,93 @@
 	<main id="main">
 
 		<!-- ======= Features Section ======= -->
-		<section id="features" class="features"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
-			<style>
-				#features {
-					background-color: dimgray;
-					margin: 30px;
-				}
-			</style>
+		<section id="features" class="card text-center m-5 bg-dimgray"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
 
-			<header class="section-header">
-				<h2>概要</h2>
-			</header>
-			<div class="container">
-
-				<!-- Feature Icons -->
-				<div class="row feature-icons">
-					<div class="row">
-
-						<div class="col-12 d-flex content justify-content-center">
-							<div class="row gy-4">
-
-								<div class="col-lg-3 col-12 icon-box">
-									<i class="bi-people-fill" style="color: rgb(255, 255, 255);"></i>
-									<div>
-										<h4>チーム</h4>
-										<p>メンバーは1人か2人</p>
+			<div class="card-body">
+				<h2 class="card-title mb-5 text-white text-bold"><strong>概要</strong></h2>
+				<div class="container">
+					<div class="row row-eq-height gy-4 text-white">
+						<div class="col-lg-3 col-12 icon-box">
+							<div class="card h-100 shadow bg-dimgray">
+								<div class="card-body">
+									<h4 class="card-title mb-3"><i class="bi-people-fill" style="color: rgb(255, 255, 255);"></i>参加人数</h4>
+									<div class="card-text" style="color: white;">
+										<p>２人までのチーム</p>
 									</div>
 								</div>
+							</div>
+						</div>
 
-								<div class="col-lg-3 col-12 icon-box">
-									<i class="bi-clipboard-check" style="color: rgb(255, 255, 255);"></i>
-									<div>
-										<h4>必要項目</h4>
-										<p>
-										<ul style="color: white;">
-											<li>基礎的なPythonプログラミングスキル</li>
-											<li>ノートパソコンとWifi</li>
-										</ul>
-										</p>
-									</div>
+						<div class="col-lg-3 col-12 icon-box">
+							<div class="card h-100 shadow bg-dimgray">
+								<div class="card-body">
+									<h4 class="card-title mb-3"><i class="bi-clipboard-check" style="color: rgb(255, 255, 255);"></i>必要項目</h4>
+									<ul class="card-text" style="color: white;">
+										<li>基礎的なPythonプログラミングスキル</li>
+										<li>ノートパソコンとWifi</li>
+									</ul>
 								</div>
+							</div>
+						</div>
 
-								<div class="col-lg-3 col-12 icon-box">
-									<i class="bi-trophy-fill" style="color: rgb(255, 255, 255);"></i>
-									<div>
-										<h4>表彰</h4>
+						<div class="col-lg-3 col-12 icon-box">
+							<div class="card h-100 shadow bg-dimgray">
+								<div class="card-body">
+									<h4 class="card-title mb-3"><i class="bi-trophy-fill" style="color: rgb(255, 255, 255);"></i>表彰</h4>
+									<div class="card-text">
 										<p>Amazonギフトカード</p>
-										<p>1位:3万円分</p>
-										<p>2位:2万円分</p>
-										<p>3位:1万円分</p>
+										<ul class="list-group" style="color: white;">
+											<li class="list-group-item bg-dimgray text-white">1位:<strong class="text-orange"> 3万円分 </strong></li>
+											<li class="list-group-item bg-dimgray text-white">2位:1万円分</li>
+											<li class="list-group-item bg-dimgray text-white">3位:5千円分</li>
+										</ul>
 									</div>
 								</div>
+							</div>
+						</div>
 
-								<div class="col-lg-3 col-12 icon-box">
-									<i class="bi-calendar-event" style="color: rgb(255, 255, 255);"></i>
-									<div>
-										<h4>開催日程</h4>
-										<p>2024年9月14日</p>
+						<div class="col-lg-3 col-12 icon-box">
+							<div class="card h-100 shadow bg-dimgray">
+								<div class="card-body">
+									<h4 class="card-title mb-3"><i class="bi-calendar-event" style="color: rgb(255, 255, 255);"></i>開催日程</h4>
+									<div class="card-text" style="color: white;">
+										<p>2024年9月14日本番大会</p>
+										<p>7月、8月に説明会を予定</p>
 									</div>
 								</div>
-
 							</div>
 						</div>
 
 					</div>
 				</div>
-				<!-- End Feature Icons -->
-
 			</div>
+
 
 		</section><!-- End Features Section -->
 
 		<!-- ======= About Section ======= -->
-		<section id="about" class="about"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
-			<style>
-				#about {
-					background-color: aliceblue;
-					margin: 30px;
-				}
-			</style>
-			<div class="container">
-				<header class="section-header">
-					<p>大会について</p>
-				</header>
-				<div class="d-flex flex-column justify-content-center ">
-					<div class="content">
-						<div class="container">
-							<h4 class="text-primary-color fw-bolder">
-								ドローンは今、かつてないほど注目を集めています。調査やインフラ点検、農業など活用される場面は数え切れません。自律型ドローンレースもその中の一つです。
-							</h4>
-							<p class="lead">
-								このレースでは、特定の形や色をしたゲートが並ぶルートを、どれだけ速く飛行することができるかを競い合います。ここ数年、AlphaPilot、IROS Autonomous Drone Racing、Game of Dronesなど、多くの大会が実施されていますが、これらの競技の大半は、視覚情報に加えて、慣性計測ユニットを含む様々なセンサーからのデータを組み合わせた、高度な制御アルゴリズムを使用しています。
-							</p>
-							<h4 class="text-primary-color fw-bolder">
-								私たちは、視覚ベースの制御アルゴリズムを自律型ドローンレースに活用したいと考えています。
-							</h4>
-							<p class="lead">
-								そこでこの大会では、ドローンに搭載されたカメラからの視覚情報のみを使用して、ゲートを順番にくぐり抜けるための、シンプルで効率的な制御方法を考案してもらいます。用いるのは、比較的安価で入手しやすく、安全なドローンモデルであるDJI Tello EDUです。Wifiによりノートパソコンなどの地上局をドローンと接続することで、ドローンのカメラからの映像を地上局で受信し、コース上に設置されたゲートを検出して、各ゲートをできるだけ速く通過するようにドローンを自動制御するアルゴリズムを開発してもらいます。
-							</p>
-						</div>
-
+		<section id="about" class="card text-center m-5 bg-alice"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
+			<div class="card-body">
+				<h2 class="card-title mb-5 text-blue text-bold"><strong>大会について</strong></h2>
+				<div class="card container">
+					<div class="p-3 d-flex flex-column justify-content-center ">
+							<div class="container">
+								<h4 class="text-primary-color fw-bolder">
+									ドローンは今、かつてないほど注目を集めています。調査やインフラ点検、農業など活用される場面は数え切れません。自律型ドローンレースもその中の一つです。
+								</h4>
+								<p class="lead">
+									このレースでは、特定の形や色をしたゲートが並ぶルートを、どれだけ速く飛行することができるかを競い合います。ここ数年、AlphaPilot、IROS Autonomous Drone Racing、Game of Dronesなど、多くの大会が実施されていますが、これらの競技の大半は、視覚情報に加えて、慣性計測ユニットを含む様々なセンサーからのデータを組み合わせた、高度な制御アルゴリズムを使用しています。
+								</p>
+								<h4 class="text-primary-color fw-bolder">
+									私たちは、視覚ベースの制御アルゴリズムを自律型ドローンレースに活用したいと考えています。
+								</h4>
+								<p class="lead">
+									そこでこの大会では、ドローンに搭載されたカメラからの視覚情報のみを使用して、ゲートを順番にくぐり抜けるための、シンプルで効率的な制御方法を考案してもらいます。用いるのは、比較的安価で入手しやすく、安全なドローンモデルであるDJI Tello EDUです。Wifiによりノートパソコンなどの地上局をドローンと接続することで、ドローンのカメラからの映像を地上局で受信し、コース上に設置されたゲートを検出して、各ゲートをできるだけ速く通過するようにドローンを自動制御するアルゴリズムを開発してもらいます。
+								</p>
+							</div>
 					</div>
-
-					<!-- <div class="content">
-              <h2>Rules</h2>
-              <p>
-                <ul>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                </ul>
-              </p>
-            </div> -->
 				</div>
+
 			</div>
 
 
@@ -305,175 +287,84 @@
 		<!-- End About Section -->
 
 		<!-- ======= Rules Section ======= -->
-		<section id="rule" class="features"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
-			<style>
-				#rules {
-					background-color: dimgray;
-					margin: 30px;
-				}
-			</style>
-			<div class="container">
-				<header class="section-header">
-					<h2>ルール</h2>
-				</header>
-				<div class="d-flex flex-column justify-content-center ">
-					<div class="content">
-						<ol class="list-group list-group-numbered">
-							<li class="list-group-item d-flex justify-content-between align-items-start">
-								<div class="ms-2 me-auto">
-									<div class="fw-bold">使用する機器</div>
-									Ryze Tech社の教育向けドローン
-									<a href="https://www.ryzerobotics.com/jp/tello-edu" class="link-primary">TELLO EDU</a>
-									を使用します
-								</div>
-							</li>
-							<li class="list-group-item d-flex justify-content-between align-items-start">
-								<div class="ms-2 me-auto">
-									<div class="fw-bold">コース</div>
-									Content for list item
-								</div>
-							</li>
-							<li class="list-group-item d-flex justify-content-between align-items-start">
-								<div class="ms-2 me-auto">
-									<div class="fw-bold">順位</div>
-									開始地点をドローンが飛び立って、輪をなるべく多くくぐり、素早くゴールにたどり着いたものから順位を付けます。
-								</div>
-							</li>
-							<li class="list-group-item d-flex justify-content-between align-items-start">
-								<div class="ms-2 me-auto">
-									<div class="fw-bold">詳細なルール</div>
-									詳細な規定はこちらをご覧ください：
-									<a href="./2024_PreCompetition_Rule.pdf"  target="_blank" class="link-primary">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
-											<path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
-										</svg> 2024_PreCompetition_Rule.pdf
-									</a>
-								</div>
-							</li>
-						</ol>
-
-
+		<section id="rule" class="card text-center m-5 bg-dimgray"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
+			<div class="card-body">
+				<h2 class="card-title mb-5 text-white text-bold"><strong>ルール</strong></h2>
+				<div class="container text-start">
+					<div class="d-flex flex-column justify-content-center ">
+						<div class="content">
+							<ol class="list-group list-group-numbered">
+								<li class="list-group-item d-flex justify-content-between align-items-start">
+									<div class="ms-2 me-auto">
+										<div class="fw-bold">使用する機器</div>
+										Ryze Tech社の教育向けドローン
+										<a href="https://www.ryzerobotics.com/jp/tello-edu" class="link-primary">TELLO EDU</a>
+										を使用します
+									</div>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-start">
+									<div class="ms-2 me-auto">
+										<div class="fw-bold">コース</div>
+										Content for list item
+									</div>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-start">
+									<div class="ms-2 me-auto">
+										<div class="fw-bold">順位</div>
+										開始地点をドローンが飛び立って、輪をなるべく多くくぐり、素早くゴールにたどり着いたものから順位を付けます。
+									</div>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-start">
+									<div class="ms-2 me-auto">
+										<div class="fw-bold">詳細なルール</div>
+										詳細な規定はこちらをご覧ください：
+										<a href="./2024_PreCompetition_Rule.pdf"  target="_blank" class="link-primary">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
+											</svg> 2024_PreCompetition_Rule.pdf
+										</a>
+									</div>
+								</li>
+							</ol>
+						</div>
 					</div>
-
 				</div>
 			</div>
-
-
 		</section>
 
 		<!-- ======= Enrollment Section ======= -->
-		<section id="registration" class="gallery" data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
-			<style>
-				#registration {
-					background-color: aliceblue;
-					margin: 30px;
-				}
-			</style>
-
-			<div class="container">
-
-				<header class="section-header">
-					<p>
-						チーム登録フォーム
-					</p>
-				</header>
-
-				<div class="row">
-					<!-- Without FF
-					<iframe src="https://forms.gle/9emrND5fqYLhAGaW9" width="640" height="800" frameborder="0" marginheight="0"
-						marginwidth="0">Loading…</iframe>-->
+		<section id="registration" class="card text-center m-5 bg-alice" data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
+			<div class="card-body">
+				<h2 class="card-title mb-5 text-blue text-bold"><strong>チーム登録フォーム</strong></h2>
+				<div>
 					<iframe
 							src="https://docs.google.com/forms/d/e/1FAIpQLSfx3dagZ8eMjLEjFXMPbuOvhpCxFgTGX9EObWV8KcBg5CO2VQ/viewform?usp=sf_link"
 							width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 				</div>
 			</div>
 		</section><!-- End Registration Section -->
-		<!-- ======= Timeline Section ========== -->
-		<!-- <section id="timeline" class="timeline">
-      <header class="section-header">
-        <p>Timeline</p>
-      </header>
-
-      <div class="container" data-aos="fade-up">
-        <div class="container">                      
-      
-      
-          <div class="row">
-              <div class="col">
-                  <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-                      <div class="timeline-step">
-                          <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                              <div class="inner-circle"></div>
-                              <p class="h6 mt-3 mb-1">December 2022</p>
-                              <p class="h6 text-muted mb-0 mb-lg-0">Start</p>
-                          </div>
-                      </div>
-                      <div class="timeline-step">
-                          <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
-                              <div class="inner-circle"></div>
-                              <p class="h6 mt-3 mb-1">Janurary 2023</p>
-                              <p class="h6 text-muted mb-0 mb-lg-0">Phase 1</p>
-                          </div>
-                      </div>
-                      <div class="timeline-step">
-                          <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
-                              <div class="inner-circle"></div>
-                              <p class="h6 mt-3 mb-1">Fabruary 2023</p>
-                              <p class="h6 text-muted mb-0 mb-lg-0">Phase 2</p>
-                          </div>
-                      </div>
-                      <div class="timeline-step">
-                          <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
-                              <div class="inner-circle"></div>
-                              <p class="h6 mt-3 mb-1">March 2023</p>
-                              <p class="h6 text-muted mb-0 mb-lg-0">Winners Announced</p>
-                          </div>
-                      </div>
-                   
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      </div>
-    </section> -->
-
-		<!--End of Timeline Section -->
 
 		<!-- Additional Materials -->
-		<section id="additional" class="additional"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
-			<style>
-				#additional {
-					background-color: dimgray;
-					margin: 30px;
-				}
-			</style>
-
-
-			<div class="container">
-				<header class="section-header">
-					<h2>
-						<font color="white">参考資料</font>
-					</h2>
-				</header>
-				<!-- Feature Icons -->
-				<div class="row feature-icons">
-					<div class="list-group-flush">
-						<a href="https://github.com/dji-sdk/Tello-Python" target="_blank"> <button type="button"
-								class="list-group-item list-group-item-action"> <span>Ryze Tello drone用DJI公式ソフトウェア開発キット</span>
+		<section id="additional" class="card text-center m-5 bg-dimgray"  data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
+			<div class="card-body">
+				<h2 class="card-title mb-5 text-white text-bold"><strong>参考資料</strong></h2>
+				<div class="container text-start">
+					<div class="row feature-icons">
+						<div class="list-group-flush">
+							<a href="https://github.com/dji-sdk/Tello-Python" target="_blank"> <button type="button"
+																									   class="list-group-item list-group-item-action"> <span>Ryze Tello drone用DJI公式ソフトウェア開発キット</span>
 							</button></a>
-						<a href="https://github.com/damiafuentes/DJITelloPy " target="_blank"> <button type="button"
-								class="list-group-item list-group-item-action"> <span>DJI Tello drone Python インターフェイス</span>
+							<a href="https://github.com/damiafuentes/DJITelloPy " target="_blank"> <button type="button"
+																										   class="list-group-item list-group-item-action"> <span>DJI Tello drone Python インターフェイス</span>
 							</button></a>
-						<a href="https://ieeexplore.ieee.org/abstract/document/9528463" target="_blank"> <button type="button"
-								class="list-group-item list-group-item-action">
+							<a href="https://ieeexplore.ieee.org/abstract/document/9528463" target="_blank"> <button type="button"
+																													 class="list-group-item list-group-item-action">
 								<span>(論文）自律型ドローンレースのためのシンプルなビジョンベースのナビゲーションと制御戦略 </span> </button></a>
-						<a href="https://opencv.org/" target="_blank"> <button type="button"
-								class="list-group-item list-group-item-action"> <span> 画像処理ライブラリ</span> </button></a>
-
-					</div>
-				</div><!-- End Feature Icons -->
-
+							<a href="https://opencv.org/" target="_blank"> <button type="button"
+																				   class="list-group-item list-group-item-action"> <span> 画像処理ライブラリ</span> </button></a>
+						</div>
+					</div><!-- End Feature Icons -->
+				</div>
 			</div>
 		</section>
 
@@ -481,162 +372,115 @@
 
 
 		<!-- ======= Simulators Section ======= -->
-		<section id="gallery" class="gallery" data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
-			<style>
-				.gallery {
-					background-color: aliceblue;
-					margin: 30px;
-				}
-			</style>
-
-			<div class="container">
-
-				<!-- Feature Icons -->
-				<div class="row feature-icons" >
-					<header class="section-header">
-						<p>Gallery</p>
-					</header>
-
-					<div class="row">
-
-
-						<div class="row align-self-center gy-4">
-
-							<div class="col-lg-6 icon-box">
-								<div>
-									<a href="" target="_blank">
-										<h4> <i class="bi-camera"></i>
-											画像処理</h4>
-									</a>
-
-									<p>
-										ドローンからの映像をプログラムで処理します
-									</p>
-									<img src="assets/img/homepage/laptopgear1.jpg" class="img-fluid p-4" alt="">
-
+		<section id="gallery" class="card text-center m-5 bg-alice" data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
+			<div class="card-body">
+				<h2 class="card-title mb-5 text-blue text-bold"><strong>Gallery</strong></h2>
+				<div class="container">
+					<div class="row row-eq-height gy-4 text-blue">
+						<div class="col-lg-6 col-12 icon-box text-primary-color">
+							<div class="card h-100 shadow bg-alice">
+								<div class="card-body">
+									<h4 class="card-title mb-3"><i class="bi-camera"></i>画像処理</h4>
+									<div class="card-text text-black">
+										<p>
+											ドローンからの映像をプログラムで処理します<br><br>
+										</p>
+										<img src="assets/img/homepage/laptopgear1.jpg" class="img-fluid p-4" alt="">
+									</div>
 								</div>
 							</div>
-
-							<div class="col-md-6 icon-box">
-								<div>
-									<a href="" target="_blank">
-										<h4> <i class="bi-wifi"></i>
-											制御
-										</h4>
-
-									</a>
-
-
-									<p>
-										ドローンを効率よく動かしましょう<br> <br>
-									</p>
-									<img src="assets/img/homepage/flight.gif" class="img-fluid p-4" alt="">
-
-								</div>
-							</div>
-
-							<!-- <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                 
-                  <div>
-                    <a href="http://doc.aldebaran.com/2-1/software/webots/webots_index.html?highlight=webots" target="_blank"> <h4>  <i class="bi-laptop"></i> Robot Dancing Simulator</h4> </a>
-                    <p>Webots is an opensource robot simulation software which is compatible with SoftBank's NAO.</p>
-                    <img src="assets/img/simulators/webots.png" class="img-fluid p-4" alt="">
-
-                  </div>
-                </div> -->
-
-
-
 						</div>
-
+						<div class="col-lg-6 col-12 icon-box">
+							<div class="card h-100 shadow bg-alice">
+								<div class="card-body">
+									<h4 class="card-title mb-3"><i class="bi-wifi"></i>制御</h4>
+									<div class="card-text text-black">
+										<p>
+											ドローンを効率よく動かしましょう<br> <br>
+										</p>
+										<img src="assets/img/homepage/flight.gif" class="img-fluid p-4" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-
-				</div><!-- End Feature Icons -->
-
+				</div>
 			</div>
-
 		</section><!-- End Features Section -->
 
 
 		<!-- ======== Frequently Asked Questions =============== -->
-		<section id="faq" class="faq" data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
-			<style>
-				#faq {
-					background-color: dimgray;
-					margin: 30px;
-				}
-			</style>
-			<header class="section-header">
-				<h2>
-					<font color="white">よくある質問</font>
-				</h2>
-			</header>
-
-			<div class="container">
-				<div class="accordion" id="accordionExample">
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingOne">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-								aria-expanded="true" aria-controls="collapseOne">
-								大会ではどのようなドローンが使えますか？
-							</button>
-						</h2>
-						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								現段階ではDJI社のTelloEDUもしくはTelloを使用していただく予定です。
+		<section id="faq" class="card text-center m-5 bg-dimgray" data-aos="fade-up"  data-aos-delay="5" data-aos-easing="ease-in-out-quart">
+			<div class="card-body">
+				<h2 class="card-title mb-5 text-white text-bold"><strong>よくある質問</strong></h2>
+				<div class="container text-start">
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+										aria-expanded="true" aria-controls="collapseOne">
+									大会ではどのようなドローンが使えますか？
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+								 data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									現段階ではDJI社のTelloEDUもしくはTelloを使用していただく予定です。
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingTwo">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								ドローンは支給されますか？
-							</button>
-						</h2>
-						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								ドローンの支給はできません。
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									ドローンは支給されますか？
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								 data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									ドローンの支給はできません。
+								</div>
 							</div>
 						</div>
-					</div>
 
 
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingFour">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-								チームメンバー以外の人の協力は許容されますか？
-							</button>
-						</h2>
-						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								参加される団体の規模によってはメンバー登録できなかった方も出てくると思いますが、そういった方の協力はOKです。また、外部の人に助言を頂くこともとても良いと思いますが、頼りすぎには注意してください。
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+									チームメンバー以外の人の協力は許容されますか？
+								</button>
+							</h2>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+								 data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									参加される団体の規模によってはメンバー登録できなかった方も出てくると思いますが、そういった方の協力はOKです。また、外部の人に助言を頂くこともとても良いと思いますが、頼りすぎには注意してください。
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingFive">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-								会場の状況等の情報は入手できますか？
-							</button>
-						</h2>
-						<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								会場の情報は随時更新予定です。
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFive">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									会場の状況等の情報は入手できますか？
+								</button>
+							</h2>
+							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+								 data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									会場の情報は随時更新予定です。
+								</div>
 							</div>
 						</div>
-					</div>
 
+					</div>
+				</div>
 				</div>
 			</div>
+
 		</section>
 
 		<!-- ========= Gallery Section  ========== -->
